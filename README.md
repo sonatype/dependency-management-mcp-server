@@ -196,7 +196,7 @@ When handling code related to dependencies, package management, or software supp
 Create rules using Windsurf's Customizations feature:
 
 **Global (all projects):**
-1. Click the "Customizations" icon in the top right
+1. Click the "Rules, Memories & Workflows" icon in the top right of Cascade Code or search Rules in Windsurf Settings
 2. Navigate to "Rules"
 3. Click "+ Global" to create a new global rule
 4. Add the following content:
@@ -207,7 +207,8 @@ Create rules using Windsurf's Customizations feature:
 When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP tools. Use the available MCP tools to research versions, check for vulnerabilities, and get recommendations before adding or updating any dependencies.
 ```
 
-**Project (specific repository):** Create `.windsurf/rules/sonatype.md` in your project root:
+**Project (specific repository):** 
+Follow the instructions for Global but click "+ Workspace" or create `.windsurf/rules/sonatype.md` in your project root:
 
 ```markdown
 ## Sonatype MCP
