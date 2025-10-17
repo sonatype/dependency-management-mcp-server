@@ -23,11 +23,6 @@ The Sonatype MCP Server enables AI assistants to access Sonatype's comprehensive
   ```
 
 ## Setup
-To encourage your AI tools to leverage the Sonatype MCP tools, you can add instructions to your Claude.MD, Cursor rules or other guidelines for your agent.
-```
-### Sonatype MCP
-When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP.
-```
 
 The Sonatype MCP Server runs as a remote MCP server. Choose the setup instructions for your IDE or AI assistant:
 
@@ -147,6 +142,126 @@ The Sonatype MCP Server uses OAuth 2.0 for secure authentication:
 5. You'll be redirected back to your IDE/assistant with an active session
 
 Your authentication token is securely stored and automatically refreshed as needed.
+
+## Configuring AI Assistant Rules
+
+To maximize the effectiveness of the Sonatype MCP Server, configure your AI assistant to prioritize using Sonatype MCP tools when working with dependencies, packages, or software supply chain security. Below are instructions for each supported IDE/tool.
+
+### Claude Code
+
+Create custom instructions using CLAUDE.md files:
+
+**Global (all projects):** Create `~/.claude/CLAUDE.md`
+
+**Project (specific repository):** Create `.claude/CLAUDE.md` in your project root
+
+Add the following instruction:
+
+```markdown
+## Sonatype MCP
+
+When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP tools. Use the available MCP tools to research versions, check for vulnerabilities, and get recommendations before adding or updating any dependencies.
+```
+
+### Cursor
+
+Create a `.cursorrules` file in your project root:
+
+**Project (specific repository):** Create `.cursorrules` in your project root
+
+Add the following instruction:
+
+```markdown
+## Sonatype MCP
+
+When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP tools. Use the available MCP tools to research versions, check for vulnerabilities, and get recommendations before adding or updating any dependencies.
+```
+
+### VS Code Copilot
+
+Create custom instructions using a `.github/copilot-instructions.md` file:
+
+**Project (specific repository):** Create `.github/copilot-instructions.md` in your project root
+
+Add the following instruction:
+
+```markdown
+## Sonatype MCP
+
+When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP tools. Use the available MCP tools to research versions, check for vulnerabilities, and get recommendations before adding or updating any dependencies.
+```
+
+### Windsurf
+
+Create rules using Windsurf's Customizations feature:
+
+**Global (all projects):**
+1. Click the "Customizations" icon in the top right
+2. Navigate to "Rules"
+3. Click "+ Global" to create a new global rule
+4. Add the following content:
+
+```markdown
+## Sonatype MCP
+
+When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP tools. Use the available MCP tools to research versions, check for vulnerabilities, and get recommendations before adding or updating any dependencies.
+```
+
+**Project (specific repository):** Create `.windsurf/rules/sonatype.md` in your project root:
+
+```markdown
+## Sonatype MCP
+
+When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP tools. Use the available MCP tools to research versions, check for vulnerabilities, and get recommendations before adding or updating any dependencies.
+```
+
+### IntelliJ with Junie
+
+Create custom guidelines using a `.junie/guidelines.md` file:
+
+**Project (specific repository):** Create `.junie/guidelines.md` in your project root
+
+Add the following instruction:
+
+```markdown
+## Sonatype MCP
+
+When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP tools. Use the available MCP tools to research versions, check for vulnerabilities, and get recommendations before adding or updating any dependencies.
+```
+
+### Kiro
+
+Create steering files in the `.kiro/steering/` directory:
+
+**Project (specific repository):** Create `.kiro/steering/sonatype.md` in your project root
+
+Add YAML front matter to make it always included:
+
+```markdown
+---
+inclusion: always
+---
+
+## Sonatype MCP
+
+When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP tools. Use the available MCP tools to research versions, check for vulnerabilities, and get recommendations before adding or updating any dependencies.
+```
+
+### Gemini Code Assist
+
+Create custom instructions using GEMINI.md files:
+
+**Global (all projects):** Create `~/.gemini/GEMINI.md`
+
+**Project (specific repository):** Create `GEMINI.md` in your project root
+
+Add the following instruction:
+
+```markdown
+## Sonatype MCP
+
+When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP tools. Use the available MCP tools to research versions, check for vulnerabilities, and get recommendations before adding or updating any dependencies.
+```
 
 ## Example Use Cases
 
