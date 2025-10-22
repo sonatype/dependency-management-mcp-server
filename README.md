@@ -48,15 +48,16 @@ claude mcp add --transport http sonatype-mcp https://mcp.seaworthy.sonatype.com/
 
 ### VS Code Copilot
 
-Add the following configuration to your global VS Code `settings.json` or create a `.mcp.json` file in your project root:
+Add the following configuration to your global VS Code `mcp.json` or create a `.vscode/mcp.json` file in your workspace:
 
 ```json
 {
-  "mcpServers": {
-    "sonatype-mcp": {
-      "url": "https://mcp.seaworthy.sonatype.com/mcp"
-    }
-  }
+  "servers": {
+		"sonatype-mcp": {
+			"url": "https://mcp.seaworthy.sonatype.com/mcp",
+			"type": "http"
+		}
+	}
 }
 ```
 
