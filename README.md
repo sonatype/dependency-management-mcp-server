@@ -293,9 +293,9 @@ The assistant can use both tools to compare your current version with the latest
 
 The Sonatype MCP Server provides three powerful tools for AI assistants:
 
-- `version` - gets component information about the current version of a component
-- `latestVersion` - gets component information about the latest version of a component
-- `recommendedVersion` - gets a set of recommended versions based on the current version of a component
+- `getComponentVersion` - gets component information about a specific version of a component
+- `getLatestComponentVersion` - gets component information about the latest version of a component
+- `getRecommendedComponentVersions` - gets a set of recommended versions to upgrade to based on the current version of a component. If no version is provided, gets a set of recommended versions of a component to start with
 
 ## Support & Feedback
 
