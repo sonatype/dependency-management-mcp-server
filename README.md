@@ -4,7 +4,7 @@ A Model Context Protocol (MCP) server that connects AI assistants to Sonatype's 
 
 ## Overview
 
-The Sonatype MCP Server enables AI assistants to access Sonatype's comprehensive dependency intelligence directly within your development workflow. By integrating with the Model Context Protocol, your AI assistant can help you make informed decisions about dependencies, identify security risks, and maintain compliance—all without leaving your IDE.
+The Sonatype MCP Server enables AI assistants to access Sonatype's comprehensive dependency intelligence directly within your development workflow. By integrating with the Model Context Protocol, your AI assistant can help you make informed decisions about dependencies, identify security risks, and maintain compliance — all without leaving your IDE.
 
 ## Key Features
 
@@ -17,7 +17,7 @@ The Sonatype MCP Server enables AI assistants to access Sonatype's comprehensive
 
 ## Prerequisites
 
-- For IDEs/tools that only support stdio MCP servers (like IntelliJ), install `mcp-remote`:
+- For IDEs or tools that only support stdio MCP servers (like IntelliJ), install `mcp-remote`:
   ```bash
   npm install -g mcp-remote
   ```
@@ -137,15 +137,15 @@ The Sonatype MCP Server uses OAuth 2.0 for secure authentication:
 
 1. When you first connect to the server through your AI assistant, you'll be prompted to authenticate
 2. You'll be redirected to the Sonatype authentication page
-3. Log in or signup
+3. Log in or sign up
 4. Grant the necessary permissions for the MCP server
-5. You'll be redirected back to your IDE/assistant with an active session
+5. You'll then be redirected to your IDE or assistant with an active session
 
 Your authentication token is securely stored and automatically refreshed as needed.
 
 ## Configuring AI Assistant Rules
 
-To maximize the effectiveness of the Sonatype MCP Server, configure your AI assistant to prioritize using Sonatype MCP tools when working with dependencies, packages, or software supply chain security. Below are instructions for each supported IDE/tool.
+To maximize the effectiveness of the Sonatype MCP Server, configure your AI assistant to prioritize using Sonatype MCP tools when working with dependencies, packages, or software supply chain security. Below are instructions for each supported IDE or tool.
 
 ### Claude Code
 
@@ -266,7 +266,7 @@ When handling code related to dependencies, package management, or software supp
 
 ## Example Use Cases
 
-In the normal course of development, LLM's will decide to use or upgrade dependencies. Our MCP tools will be used transparently offering better suggestions with more up to date information, eliminating the side quest of validating component and version choice.
+In the normal course of development, LLMs will decide to use or upgrade dependencies. Our MCP tools will be used transparently, offering better suggestions with more up-to-date information, eliminating the side quest of validating component and version choices.
 
 Here are some ways to leverage the Sonatype MCP Server explicitly in your development workflow:
 
@@ -292,9 +292,9 @@ The assistant can use both tools to compare your current version with the latest
 
 The Sonatype MCP Server provides three powerful tools for AI assistants:
 
-- `version` - gets component information about the current version of a component
-- `latestVersion` - gets component information about the latest version of a component
-- `recommendedVersion` - gets a set of recommended versions based on the current version of a component
+- `version` - Gets component information about the current version of a component
+- `latestVersion` - Gets component information about the latest version of a component
+- `recommendedVersion` - Gets a set of recommended versions based on the current version of a component
 
 ## Support & Feedback
 
