@@ -32,7 +32,7 @@ The Sonatype MCP Server runs as a remote MCP server. Choose the setup instructio
 {
   "mcpServers": {
     "discoveredServer": {
-      "url": "https://mcp.seaworthy.sonatype.com/mcp"
+      "url": "https://mcp.guide.sonatype.com/mcp"
     }
   }
 }
@@ -43,7 +43,7 @@ The Sonatype MCP Server runs as a remote MCP server. Choose the setup instructio
 Add the server using the Claude CLI:
 
 ```bash
-claude mcp add --transport http sonatype-mcp https://mcp.seaworthy.sonatype.com/mcp
+claude mcp add --transport http sonatype-mcp https://mcp.guide.sonatype.com/mcp
 ```
 
 ### VS Code Copilot
@@ -54,7 +54,7 @@ Add the following configuration to your global VS Code `mcp.json` or create a `.
 {
   "servers": {
 		"sonatype-mcp": {
-			"url": "https://mcp.seaworthy.sonatype.com/mcp",
+			"url": "https://mcp.guide.sonatype.com/mcp",
 			"type": "http"
 		}
 	}
@@ -72,7 +72,7 @@ Create or edit `~/.codeium/windsurf/mcp_config.json`:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp.seaworthy.sonatype.com/mcp"
+        "https://mcp.guide.sonatype.com/mcp"
       ]
     }
   }
@@ -92,7 +92,7 @@ Create or edit `~/.codeium/windsurf/mcp_config.json`:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp.seaworthy.sonatype.com/mcp"
+        "https://mcp.guide.sonatype.com/mcp"
       ]
     }
   }
@@ -110,7 +110,7 @@ Create or edit `~/.kiro/settings/mcp.json`:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp.seaworthy.sonatype.com/mcp"
+        "https://mcp.guide.sonatype.com/mcp"
       ]
     }
   }
@@ -126,7 +126,7 @@ Cursor supports remote servers directly. Add to your `~/.cursor/mcp.json`:
   "mcpServers": {
     "sonatype-mcp": {
       "type": "http",
-      "url": "https://mcp.seaworthy.sonatype.com/mcp"
+      "url": "https://mcp.guide.sonatype.com/mcp"
     }
   }
 }
