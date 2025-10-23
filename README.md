@@ -32,7 +32,7 @@ The Sonatype MCP Server runs as a remote MCP server. Choose the setup instructio
 {
   "mcpServers": {
     "discoveredServer": {
-      "url": "https://mcp.seaworthy.sonatype.com/mcp"
+      "url": "https://mcp.guide.sonatype.com/mcp"
     }
   }
 }
@@ -43,20 +43,21 @@ The Sonatype MCP Server runs as a remote MCP server. Choose the setup instructio
 Add the server using the Claude CLI:
 
 ```bash
-claude mcp add --transport http sonatype-mcp https://mcp.seaworthy.sonatype.com/mcp
+claude mcp add --transport http sonatype-mcp https://mcp.guide.sonatype.com/mcp
 ```
 
 ### VS Code Copilot
 
-Add the following configuration to your global VS Code `settings.json` or create a `.mcp.json` file in your project root:
+Add the following configuration to your global VS Code `mcp.json` or create a `.vscode/mcp.json` file in your workspace:
 
 ```json
 {
-  "mcpServers": {
-    "sonatype-mcp": {
-      "url": "https://mcp.seaworthy.sonatype.com/mcp"
-    }
-  }
+  "servers": {
+		"sonatype-mcp": {
+			"url": "https://mcp.guide.sonatype.com/mcp",
+			"type": "http"
+		}
+	}
 }
 ```
 
@@ -71,7 +72,7 @@ Create or edit `~/.codeium/windsurf/mcp_config.json`:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp.seaworthy.sonatype.com/mcp"
+        "https://mcp.guide.sonatype.com/mcp"
       ]
     }
   }
@@ -91,7 +92,7 @@ Create or edit `~/.codeium/windsurf/mcp_config.json`:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp.seaworthy.sonatype.com/mcp"
+        "https://mcp.guide.sonatype.com/mcp"
       ]
     }
   }
@@ -109,7 +110,7 @@ Create or edit `~/.kiro/settings/mcp.json`:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp.seaworthy.sonatype.com/mcp"
+        "https://mcp.guide.sonatype.com/mcp"
       ]
     }
   }
@@ -125,7 +126,7 @@ Cursor supports remote servers directly. Add to your `~/.cursor/mcp.json`:
   "mcpServers": {
     "sonatype-mcp": {
       "type": "http",
-      "url": "https://mcp.seaworthy.sonatype.com/mcp"
+      "url": "https://mcp.guide.sonatype.com/mcp"
     }
   }
 }
@@ -292,9 +293,9 @@ The assistant can use both tools to compare your current version with the latest
 
 The Sonatype MCP Server provides three powerful tools for AI assistants:
 
-- `version` - Gets component information about the current version of a component
-- `latestVersion` - Gets component information about the latest version of a component
-- `recommendedVersion` - Gets a set of recommended versions based on the current version of a component
+- `getComponentVersion` - Gets component information about a specific version of a component
+- `getLatestComponentVersion` - Gets component information about the latest version of a component
+- `getRecommendedComponentVersions` - Gets a set of recommended versions to upgrade to based on the current version of a component. If no version is provided, gets a set of recommended versions to start with for the component
 
 ## Support & Feedback
 
