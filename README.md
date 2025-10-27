@@ -43,7 +43,7 @@ The Sonatype MCP Server runs as a remote MCP server. Choose the setup instructio
 Add the server using the Claude CLI:
 
 ```bash
-claude mcp add --transport http sonatype-mcp https://mcp.guide.sonatype.com/mcp
+claude mcp add --transport http --scope user sonatype-mcp https://mcp.guide.sonatype.com/mcp
 ```
 
 ### VS Code Copilot
