@@ -32,7 +32,7 @@ The Sonatype MCP Server runs as a remote MCP server. Choose the setup instructio
 {
   "mcpServers": {
     "discoveredServer": {
-      "url": "https://mcp.guide.sonatype.com/mcp"
+      "httpUrl": "https://mcp.guide.sonatype.com/mcp"
     }
   }
 }
