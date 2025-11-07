@@ -136,7 +136,7 @@ Cursor supports remote servers directly. Add to your `~/.cursor/mcp.json`:
 
 Create or edit `~/.codex/config.toml`:
 
-```json
+```toml
 [mcp_servers.sonatype-mcp]
 command = "npx"
 args = ["-y", "mcp-remote", "https://mcp.guide.sonatype.com/mcp"]
