@@ -132,6 +132,17 @@ Cursor supports remote servers directly. Add to your `~/.cursor/mcp.json`:
 }
 ```
 
+### Codex (IDE Plugin & CLI)
+
+Create or edit `~/.codex/config.toml`:
+
+```json
+[mcp_servers.sonatype-mcp]
+command = "npx"
+args = ["-y", "mcp-remote", "https://mcp.guide.sonatype.com/mcp"]
+startup_timeout_ms = 20000
+```
+
 ## Authentication
 
 The Sonatype MCP Server uses OAuth 2.0 for secure authentication:
