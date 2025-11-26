@@ -72,7 +72,9 @@ Create or edit `~/.codeium/windsurf/mcp_config.json`:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp.guide.sonatype.com/mcp"
+        "https://mcp.guide.sonatype.com/mcp",
+        "--static-oauth-client-metadata",
+        "{\"scope\": \"openid email search:all\" }"
       ]
     }
   }
@@ -92,7 +94,9 @@ Create or edit `~/.codeium/windsurf/mcp_config.json`:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp.guide.sonatype.com/mcp"
+        "https://mcp.guide.sonatype.com/mcp",
+        "--static-oauth-client-metadata",
+        "{\"scope\": \"openid email search:all\" }"
       ]
     }
   }
@@ -110,7 +114,9 @@ Create or edit `~/.kiro/settings/mcp.json`:
       "command": "npx",
       "args": [
         "mcp-remote",
-        "https://mcp.guide.sonatype.com/mcp"
+        "https://mcp.guide.sonatype.com/mcp",
+        "--static-oauth-client-metadata",
+        "{\"scope\": \"openid email search:all\" }"
       ]
     }
   }
@@ -139,7 +145,7 @@ Create or edit `~/.codex/config.toml`:
 ```toml
 [mcp_servers.sonatype-mcp]
 command = "npx"
-args = ["-y", "mcp-remote", "https://mcp.guide.sonatype.com/mcp"]
+args = ["-y", "mcp-remote", "https://mcp.guide.sonatype.com/mcp", "--static-oauth-client-metadata", "{\"scope\": \"openid email search:all\" }"]
 startup_timeout_ms = 20000
 ```
 
