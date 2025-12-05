@@ -1,4 +1,4 @@
-# Sonatype MCP Server
+
 
 A Model Context Protocol (MCP) server that connects AI assistants to Sonatype's dependency management and security intelligence platform. Empower your AI coding assistant with real-time insights into open source security vulnerabilities, license compliance, and dependency health.
 
