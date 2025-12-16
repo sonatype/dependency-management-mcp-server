@@ -28,6 +28,8 @@ The Sonatype MCP Server runs as a remote MCP server. Choose the setup instructio
 
 ### Gemini Code Assist
 
+Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
+
 ```json
 {
   "mcpServers": {
@@ -41,21 +43,21 @@ The Sonatype MCP Server runs as a remote MCP server. Choose the setup instructio
 }
 ```
 
-Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
-
 ### Claude Code
 
 Add the server using the Claude CLI:
+
+Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
 
 ```bash
 claude mcp add --transport http --scope user sonatype-mcp https://mcp.guide.sonatype.com/mcp --header "Authorization: Bearer <your-token>"
 ```
 
-Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
-
 ### VS Code Copilot
 
 Add the following configuration to your global VS Code `mcp.json` or create a `.vscode/mcp.json` file in your workspace:
+
+Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
 
 ```json
 {
@@ -71,11 +73,11 @@ Add the following configuration to your global VS Code `mcp.json` or create a `.
 }
 ```
 
-Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
-
 ### Windsurf
 
 Create or edit `~/.codeium/windsurf/mcp_config.json`:
+
+Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
 
 ```json
 {
@@ -92,8 +94,6 @@ Create or edit `~/.codeium/windsurf/mcp_config.json`:
   }
 }
 ```
-
-Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
 
 ### IntelliJ with Junie
 
@@ -101,6 +101,8 @@ Replace `<your-token>` with your personal API token generated at https://guide.s
 
 **Project Scope:** Create `.junie/mcp/.mcp.json` in your project root:
 
+Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
+
 ```json
 {
   "mcpServers": {
@@ -116,13 +118,13 @@ Replace `<your-token>` with your personal API token generated at https://guide.s
   }
 }
 ```
-
-Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
 
 ### Kiro
 
 Create or edit `~/.kiro/settings/mcp.json`:
 
+Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
+
 ```json
 {
   "mcpServers": {
@@ -139,11 +141,11 @@ Create or edit `~/.kiro/settings/mcp.json`:
 }
 ```
 
-Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
-
 ### Cursor
 
 Cursor supports remote servers directly. Add to your `~/.cursor/mcp.json`:
+
+Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
 
 ```json
 {
@@ -159,11 +161,11 @@ Cursor supports remote servers directly. Add to your `~/.cursor/mcp.json`:
 }
 ```
 
-Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
-
 ### Codex (IDE Plugin & CLI)
 
 Create or edit `~/.codex/config.toml`:
+
+Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
 
 ```toml
 [mcp_servers.sonatype-mcp]
@@ -171,8 +173,6 @@ command = "npx"
 args = ["-y", "mcp-remote", "https://mcp.guide.sonatype.com/mcp", "--header", "Authorization: Bearer <your-token>"]
 startup_timeout_ms = 20000
 ```
-
-Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
 
 ## Authentication
 
