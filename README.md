@@ -162,16 +162,18 @@ Replace `<your-token>` with your personal API token generated at https://guide.s
 ```
 
 ### Codex (IDE Plugin & CLI)
+For both methods below, define an environment variable SONATYPE_GUIDE_MCP_TOKEN for your personal API token generated at https://guide.sonatype.com/settings/tokens.
 
+Method 1:
+Using CLI command: `codex mcp add sonatype-mcp --url https://mcp.guide.sonatype.com/mcp --bearer-token-env-var SONATYPE_GUIDE_MCP_TOKEN`
+
+Method 2:
 Create or edit `~/.codex/config.toml`:
-
-Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
 
 ```toml
 [mcp_servers.sonatype-mcp]
-command = "npx"
-args = ["-y", "mcp-remote", "https://mcp.guide.sonatype.com/mcp", "--header", "Authorization: Bearer <your-token>"]
-startup_timeout_ms = 20000
+url = "https://mcp.guide.sonatype.com/mcp"
+bearer_token_env_var = "SONATYPE_GUIDE_MCP_TOKEN"
 ```
 
 ## Authentication
