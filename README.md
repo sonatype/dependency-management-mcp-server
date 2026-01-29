@@ -73,6 +73,26 @@ Replace `<your-token>` with your personal API token generated at https://guide.s
 }
 ```
 
+### GitHub Copilot CLI
+
+Add to your `~/.copilot/mcp-config.json`:
+
+Replace `<your-token>` with your personal API token generated at https://guide.sonatype.com/settings/tokens
+
+```json
+{
+  "mcpServers": {
+    "sonatype-mcp": {
+      "type": "http",
+      "url": "https://mcp.guide.sonatype.com/mcp",
+      "headers": {
+        "Authorization": "Bearer <your-token>"
+      }
+    }
+  }
+}
+```
+
 ### Windsurf
 
 Create or edit `~/.codeium/windsurf/mcp_config.json`:
