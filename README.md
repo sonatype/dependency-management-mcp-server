@@ -208,13 +208,16 @@ When handling code related to dependencies, package management, or software supp
 
 ### Cursor
 
-Create a `.cursorrules` file in your project root:
+Create a project rule under `.cursor/rules/` (or add a global rule in **Cursor Settings → Rules**).
 
-**Project (specific repository):** Create `.cursorrules` in your project root
-
-Add the following instruction:
+**Project (specific repository):** Create `.cursor/rules/sonatype-mcp.mdc` in your project root:
 
 ```markdown
+---
+description: Prioritize Sonatype MCP for dependency and supply chain decisions
+alwaysApply: true
+---
+
 ## Sonatype MCP
 
 When handling code related to dependencies, package management, or software supply chain security, always prioritize Sonatype MCP tools. Use the available MCP tools to research versions, check for vulnerabilities, and get recommendations before adding or updating any dependencies.
